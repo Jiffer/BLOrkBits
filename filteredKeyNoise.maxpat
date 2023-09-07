@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 893.0, 726.0 ],
+		"rect" : [ 1810.0, 87.0, 893.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "## A simple reverberator ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "az.reverber8r~.maxpat",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 255.0, 713.0, 189.0, 111.0 ],
+					"prototypename" : "pixl",
+					"varname" : "reverber8r",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-131",
 					"maxclass" : "newobj",
@@ -485,7 +509,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 251.0, 730.0, 45.0, 45.0 ]
+					"patching_rect" : [ 256.0, 921.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -511,7 +535,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 257.0, 683.0, 120.0, 36.0 ],
+					"patching_rect" : [ 262.0, 874.0, 120.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -200 ],
@@ -634,7 +658,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 386.0, 482.0, 360.0, 155.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 349.228240966796875, 0.951951920986176, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 4978.03173828125, 0.951951920986176, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~"
 				}
 
@@ -1538,6 +1562,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-87", 1 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
@@ -1673,16 +1713,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-87", 1 ],
-					"order" : 0,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-87", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1816,6 +1847,15 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-1::obj-18" : [ "decay", "decay", 0 ],
+			"obj-1::obj-20" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-1::obj-26" : [ "cutoff", "cutoff", 0 ],
+			"obj-1::obj-31" : [ "wetdry", "wetdry", 0 ],
+			"obj-1::obj-4" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-1::obj-48" : [ "pictctrl[2]", "pictctrl[2]", 0 ],
+			"obj-1::obj-5" : [ "size", "size", 0 ],
+			"obj-1::obj-53" : [ "pictctrl", "pictctrl", 0 ],
+			"obj-1::obj-7" : [ "onoff", "onoff", 0 ],
 			"obj-87" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -1830,6 +1870,41 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "az.audio-left-handler.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
+				"patcherrelativepath" : "../../../Max 8/Packages/Auzzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "az.data-handler.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
+				"patcherrelativepath" : "../../../Max 8/Packages/Auzzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "az.reverber8r~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/Auzzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "az.sub-xfade~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
+				"patcherrelativepath" : "../../../Max 8/Packages/Auzzie/patchers/sub",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "az.sub-yafr2~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
+				"patcherrelativepath" : "../../../Max 8/Packages/Auzzie/patchers/sub",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "link.beat.mxo",
 				"type" : "iLaX"
 			}
