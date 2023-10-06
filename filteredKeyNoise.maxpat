@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1648.0, 89.0, 1042.0, 777.0 ],
+		"rect" : [ 48.0, 89.0, 1042.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -832,7 +832,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 100.0, 35.0, 22.0 ],
-									"text" : "0.5 1"
+									"text" : "0.4 1"
 								}
 
 							}
@@ -1283,7 +1283,7 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 375.0, 917.0, 360.0, 155.0 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 698.45648193359375, 0.951951920986176, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 554.365234375, 0.951951920986176, 50.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~"
 				}
 
